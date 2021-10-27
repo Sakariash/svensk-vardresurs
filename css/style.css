@@ -1,0 +1,653 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+}
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 2.5rem;
+  background-color: rgb(136, 196, 136);
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.LeftNavbar img {
+  height: 2.3rem;
+}
+.RightNavbar {
+  display: flex;
+}
+.About {
+  padding-right: 30px;
+  visibility: hidden;
+}
+.Work {
+  padding-right: 30px;
+  visibility: hidden;
+}
+.BurgerMenu {
+  display: flex;
+  flex-direction: column;
+}
+.Row {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 1px;
+}
+.Hero {
+  width: 100%;
+  height: 300px;
+  background-color: black;
+}
+.HeroPic {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.HeroPic img {
+  width: 100%;
+  height: 300px;
+  opacity: 0.5;
+  object-fit: fill;
+}
+.Company {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  -webkit-text-stroke: 0.5px black;
+  text-decoration: underline floralwhite;
+  font-family: sans-serif;
+}
+.Slogan {
+  position: absolute;
+  width: 100%;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  -webkit-text-stroke: 0.5px black;
+  font-family: sans-serif;
+}
+.article {
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
+  width: 100%;
+  height: 300px;
+  background-color: purple;
+  display: none;
+}
+.firstValueWord {
+  width: 34vw;
+  height: 290px;
+  background-color: red;
+}
+.secondValueWord {
+  width: 34vw;
+  height: 290px;
+  background-color: green;
+}
+.thirdValueWord {
+  width: 34vw;
+  height: 290px;
+  background-color: yellow;
+}
+.Main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+}
+.Animation {
+  display: block;
+  width: 48%;
+  height: 300px;
+}
+.Form {
+  display: block;
+  align-items: center;
+  padding: 40px 40px 40px 40px;
+  width: 48%;
+  height: 300px;
+}
+.selectForm {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+label {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+select {
+  width: 400px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  border-radius: 50px;
+  height: 40px;
+}
+input {
+  background-color: rgb(136, 196, 136);
+}
+
+.Info {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-right: 70px;
+  padding-left: 70px;
+}
+.Review {
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  margin-top: 20px;
+  font-family: sans-serif;
+  font-size: small;
+  text-align: right;
+}
+span {
+  font-family: 'futura_ltbook';
+  font-size: x-small;
+  padding-left: 159px;
+}
+.Employee {
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  margin-top: 20px;
+}
+.Employee img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right;
+}
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(136, 196, 136);
+  position: absolute;
+  margin-top: 20px;
+}
+@media screen and (min-width: 800px) {
+  .Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 4rem;
+    background-color: rgb(136, 196, 136);
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .LeftNavbar img {
+    height: 3rem;
+  }
+  .RightNavbar {
+    display: flex;
+  }
+  .About {
+    font-size: 30px;
+    padding-right: 30px;
+  }
+  .Work {
+    font-size: 30px;
+    padding-right: 30px;
+  }
+  .BurgerMenu {
+    display: flex;
+    flex-direction: column;
+  }
+  .Row {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 2px;
+  }
+  .Hero {
+    width: 100%;
+    height: 600px;
+    background-color: black;
+  }
+  .HeroPic {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  .HeroPic img {
+    width: 100%;
+    height: 600px;
+    opacity: 0.5;
+    object-fit: cover;
+    object-position: bottom;
+  }
+  .Company {
+    position: absolute;
+    width: 100%;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.5px black;
+    font-size: 40px;
+    text-decoration: underline white;
+    /* font-family: sans-serif; */
+    font-family: sans-serif;
+  }
+  .Slogan {
+    position: absolute;
+    width: 100%;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.5px black;
+    font-size: 30px;
+    font-family: sans-serif;
+  }
+  .article {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    width: 100%;
+    height: 300px;
+  }
+
+  .firstValueWord {
+    width: 34vw;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(60, 120, 168);
+    padding: 50px 60px 30px 60px;
+  }
+  .secondValueWord {
+    width: 34vw;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(136, 196, 136);
+    padding: 40px 60px 30px 60px;
+  }
+  .thirdValueWord {
+    width: 34vw;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(60, 120, 168);
+    padding: 50px 60px 30px 60px;
+  }
+  h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-weight: 600;
+  }
+  p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .Main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+  }
+  .Animation {
+    width: 50%;
+    height: 600px;
+  }
+  .Form {
+    width: 50%;
+    height: 600px;
+  }
+  .selectForm {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  label {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  select {
+    width: 400px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    border-radius: 50px;
+    height: 40px;
+  }
+  .Info {
+    width: 100%;
+    height: 650px;
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+  }
+  .Photo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 50px;
+    padding-left: 50px;
+    position: relative;
+    top: -60%;
+  }
+  .Employee {
+    width: 250px;
+    height: 250px;
+    background-color: white;
+  }
+  .Employee img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right;
+  }
+  .Quote {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 50px;
+    padding-left: 50px;
+    position: relative;
+    top: 40%;
+  }
+  .Review {
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    margin-top: 20px;
+    font-family: sans-serif;
+    font-size: small;
+    text-align: right;
+  }
+  footer {
+    width: 100vw;
+    height: 100px;
+    background-color: rgb(136, 196, 136);
+    position: absolute;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    width: 100vw;
+    height: 100vw;
+    margin: 0px;
+    padding-right: 0px;
+  }
+  .Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 4rem;
+    background-color: rgb(136, 196, 136);
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .LeftNavbar img {
+    height: 3rem;
+  }
+  .RightNavbar {
+    display: flex;
+  }
+  .About {
+    font-size: 30px;
+    padding-right: 30px;
+    visibility: visible;
+  }
+  .Work {
+    font-size: 30px;
+    padding-right: 30px;
+    visibility: visible;
+  }
+  .BurgerMenu {
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+  }
+  .Hero {
+    width: 100%;
+    height: 600px;
+    background-color: black;
+  }
+  .HeroPic {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .HeroPic img {
+    width: 100%;
+    height: 600px;
+    opacity: 0.5;
+    object-fit: cover;
+    object-position: bottom;
+  }
+  .Company {
+    position: absolute;
+    width: 100%;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.5px black;
+    font-size: 50px;
+    text-decoration: underline white;
+    font-family: sans-serif;
+  }
+  .Slogan {
+    position: absolute;
+    width: 100%;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.5px black;
+  }
+  .Slogan p {
+    font-family: sans-serif;
+    font-size: 40px;
+  }
+  .article {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    width: 100%;
+    height: 300px;
+  }
+  svg {
+    display: flex;
+    margin-top: 0px;
+  }
+  .firstValueWord {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(60, 120, 168);
+    padding: 50px 60px 30px 60px;
+  }
+  .secondValueWord {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(136, 196, 136);
+    padding: 40px 60px 30px 60px;
+  }
+  .thirdValueWord {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(60, 120, 168);
+    padding: 50px 60px 30px 60px;
+  }
+  p {
+    font-family: 'futura_ltbook';
+  }
+  .Main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+  }
+  .Message {
+    width: 50%;
+    height: 600px;
+    padding: 60px;
+    display: flex;
+  }
+  .Message p {
+    padding-top: 100px;
+    font-size: large;
+  }
+  .Message h3 {
+    font-size: 45px;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(136, 196, 136);
+    -webkit-text-stroke: 1px black;
+    font-family: sans-serif;
+    font-weight: 500;
+  }
+  .formHeading {
+    padding: 0px 100px 0px 10px;
+    /* background-color: blueviolet; */
+    margin-bottom: 400px;
+    font-size: 45px;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(136, 196, 136);
+    -webkit-text-stroke: 1px black;
+    font-family: sans-serif;
+    font-weight: 500;
+  }
+  .Form {
+    width: 50%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .selectForm {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+  }
+  form select:focus {
+    outline: none;
+    border: 2px solid rgb(136, 196, 136);
+  }
+  label {
+    font-family: 'futura_ltbook';
+  }
+  select {
+    width: 400px;
+    font-family: 'futura_ltbook';
+    font-size: 17px;
+    border-radius: 50px;
+    height: 40px;
+  }
+  input {
+    width: 400px;
+    font-family: 'futura_ltbook';
+    font-size: 15px;
+    border-radius: 50px;
+    height: 40px;
+  }
+
+  .Info {
+    width: 100%;
+    height: 530px;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding-top: 10px;
+  }
+  .Photo {
+    width: 100%;
+    justify-content: space-between;
+    filter: grayscale(100%);
+  }
+  .Employee {
+    width: 250px;
+    height: 250px;
+    justify-content: space-between;
+  }
+  .Employee img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .Quote {
+    width: 100%;
+    /* display: flex; */
+    justify-content: space-between;
+    padding-right: 50px;
+    padding-left: 50px;
+    position: relative;
+  }
+  .Review {
+    width: 250px;
+    height: 250px;
+    margin-top: 0px;
+    font-family: sans-serif;
+    font-size: small;
+    text-align: justify;
+    padding-top: 10px;
+  }
+
+  footer {
+    width: 100vw;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(136, 196, 136);
+    position: absolute;
+    font-family: 'futura_ltbook';
+  }
+  .Icon {
+    width: 200px;
+    height: 100px;
+    flex-direction: row;
+  }
+  .icon img {
+    width: 30px;
+  }
+}
