@@ -1,10 +1,8 @@
 <?php
-
-declare(strict_types=1);
 require __DIR__ . '/header.php';
 require __DIR__ . '/functions.php';
+require __DIR__ . '/data.php';
 ?>
-
 <!-- 1.     Navbar -->
 <nav class="Navbar">
     <div class="LeftNavbar"><img src="/images/stethoscope.png" alt="Stethoscope-logo"></div>
@@ -36,6 +34,7 @@ require __DIR__ . '/functions.php';
 
             </defs>
             <g>
+                <!-- svg -->
                 <path fill="rgb(136, 196, 136)" d="M111.481 71.957s-68.519-48.855-68.519 3.224c0 35.078 31.023 65.661 51.298 81.93a10.388 10.388 0 0 1 4.177 3.298c7.695 5.863 13.02 9.16 13.02 9.16S180 127.31 180 75.182s-68.519-3.225-68.519-3.225z" data-color="1"></path>
                 <path fill="#E2CEC5" d="M92.892 158.602s72.892-50.931 72.892-100.153c0-24.427-14.656-27.969-23.402-27.969-18.052 0-41.527 14.656-49.514 19.86-7.914-5.252-31.34-19.908-49.441-19.908C34.656 30.431 20 34.021 20 58.4c0 49.221 72.892 100.202 72.892 100.202zM43.426 38.345c18.492 0 46.412 19.811 46.73 20.006a4.89 4.89 0 0 0 5.423 0c.318-.195 28.238-20.006 46.803-20.006 6.253 0 14.656 2.052 14.656 20.055 0 43.969-52.079 81.392-64.171 89.502-12.043-8.11-64.122-45.606-64.122-89.502 0-18.003 8.354-20.055 14.681-20.055z" data-color="2"></path>
             </g>
@@ -49,6 +48,7 @@ require __DIR__ . '/functions.php';
 
             </defs>
             <g>
+                <!-- Worlds biggest svg pics, just skip to line 138 -->
                 <path d="M66.148 93.593c-.379-1.482-.786-2.77-1.021-4.089-.201-1.127-.097-2.257.743-3.193.153-.17.223-.452.246-.691.052-.548.244-1.01.557-1.472.185-.274.183-.705.179-1.065-.009-.689-.099-1.376-.121-2.065-.018-.563.124-1.098.719-1.31.556-.198 1.053.008 1.464.413.133.131.254.274.364.393 1.302-.182 1.502-.059 1.862 1.158.146.494.315.91.867 1.146.307.131.549.502.728.817.246.433.404.915.618 1.42.14-.035.263-.043.363-.094.856-.441 1.09-.386 1.66.359.126.164.291.379.467.41.665.119.947.559 1.13 1.133.044.137.155.253.286.457.196-.193.359-.322.481-.483.132-.174.211-.387.338-.566.189-.268.426-.493.791-.377.377.12.421.453.382.773-.041.34-.15.672-.216 1.01-.056.287-.092.577-.151.951 1.068-.5 1.322-.459 2.099.273.206.194.416.391.589.614 1.107 1.428 1.689 2.987.869 4.735-1.255 2.677-2.954 5.054-5.271 6.93-1.37 1.109-3.026 1.368-4.75 1.173a3.378 3.378 0 0 1-1.941-.922 36.116 36.116 0 0 1-2.179-2.214c-.63-.703-1.202-1.457-1.776-2.208a5.157 5.157 0 0 1-.635-1.043c-.389-.885-.531-1.762.259-2.373z" fill="#F49E5A" data-color="1"></path>
                 <path d="M178.351 137.756c2.526-2.624 2.329-6.644-1.843-8.198-14.097-5.253-43.244-1.172-71.776-1.172-22.074 0-49.7-1.901-69.661-2.401-4.007-.1-10.413 3.004-7.406 9.015.531 1.061 2.819 3.563 3.905 4.052 9.199 4.138 19.9 4.539 22.822 4.752 10.717.782 21.638 1.029 32.298 2.36 9.545 1.191 40.419-1.163 73.411-1.163 6.597 0 13.019-1.811 18.25-7.245z" fill="#F7E3D5" data-color="2"></path>
                 <path d="M61.389 90.076a11.634 11.634 0 0 0-.528-2.896c-.397-1.226-1.186-1.97-2.517-1.912a7.557 7.557 0 0 0-.981.104c-5.067.901-9.717 5.737-11.41 10.094-1.459 3.753-1.586 9.295-2.178 13.274-.772 5.19-1.965 8.895-1.645 14.131.236 3.854 2.675 11.306 8.139 9.14 1.799-.713 2.895-1.77 3.432-3.477 2.025-6.445 1.736-14.408 2.891-21.062.88-5.066 3.856-8.935 4.62-13.998.17-1.122.244-2.267.177-3.398z" fill="#F49E5A" data-color="1"></path>
@@ -147,6 +147,7 @@ require __DIR__ . '/functions.php';
 
             </defs>
             <g>
+                <!-- svg again, skip to line 169 -->
                 <path fill="#1A1A1A" d="M99.959 156.366h-.012c-27.094 0-49.057-21.964-49.057-49.057V69.408c0-27.087 21.958-49.045 49.045-49.045h.012c27.094 0 49.057 21.964 49.057 49.057v37.901c0 27.087-21.959 49.045-49.045 49.045z" data-color="1"></path>
                 <path fill="rgb(136, 196, 136)" d="M174.812 179.636c-.101-33.621-33.555-60.852-74.812-60.852s-74.711 27.23-74.812 60.852h149.624z" data-color="2"></path>
                 <path fill="#F7B98F" d="M123.78 122.002a88.037 88.037 0 00-9.373-2.044v-15.633h-28.92v15.633a88.037 88.037 0 00-9.373 2.044c0 .041-.006.08-.006.121 0 13.166 10.673 23.84 23.839 23.84s23.839-10.673 23.839-23.84c0-.041-.006-.081-.006-.121z" data-color="3"></path>
@@ -179,147 +180,82 @@ require __DIR__ . '/functions.php';
     </div>
     <!-- Länka användarens val, HUR? == Array filter, jämför med vad du får ut från $_GET-->
     <div class="Form">
-        <h3 class="formHeading">Hjälp oss hjälpa er<br> hjälpa andra</h3>
+        <h3>Hjälp oss hjälpa er<br> hjälpa andra</h3>
         <div class="selectForm">
             <!-- Dropdown meny där användaren väljer vilket sjukhus den representerar -->
-            <Form action="/">
+
+            <Form action="/" method="GET">
                 <label for="hospital">Arbetsplats:</label> <br>
                 <select id="hospital" name="hospital">
                     <option value="" disabled selected class="placeholder">Sjukhus i behov av resurs</option>
-                    <option value="Allmänna Sjukhuset">Allmänna Sjukhuset, Malmö</option>
-                    <option value="Astrid Lindgrens Barnsjukhus">Astrid Lindgrens Barnsjukhus, Stockholm</option>
-                    <option value="Capio Lundby Närsjukhus">Capio Lundby Närsjukhus,Göteborg</option>
-                    <option value="Capio Sankt Görans Sjukhus">Capio Sankt Görans Sjukhus, Stockholm</option>
-                    <option value="Hallands Sjukhus Halmstad">Hallands Sjukhus Halmstad, Halmstad</option>
-                    <option value="Hallands Sjukhus Varberg">Hallands Sjukhus Varberg, Varberg</option>
-                    <option value="Kiruna Sjukhus">Kiruna Sjukhus, Kiruna</option>
-                    <option value="Norrlands Universitetssjukhus">Norrlands Universitetssjukhus, Umeå</option>
-                    <option value="Sahlgrenska Universitetssjukhus">Sahlgrenska Universitetssjukhus, Göteborg</option>
-                    <option value="Skånes Universitetssjukhus">Skånes Universitetssjukhus, Malmö</option>
-                    <option value="Södersjukhuset">Södersjukhuset, Stockholm</option>
-                    <option value="Östra Sjukhuset">Östra Sjukhuset, Göteborg</option>
+                    <?php foreach ($hospitals as $hospital) {
+                        foreach ($hospital as $key => $value) {
+                    ?><option value="<?php echo $value; ?>"><?php echo $value; ?>, <?php echo $key; ?></option><?php
+                                                                                                            }
+                                                                                                        } ?>
                 </select><br><br>
-                <!-- Dropdown meny där användaren vad för typ av ansälld den söker -->
-                <!-- <Form action="/"> -->
+
+                <!-- Loopar igenom occupation array och placerar i select form -->
                 <label for="occupation">Behov:</label> <br>
                 <select id="occupation" name="occupation">
                     <option value="" disabled selected class="placeholder">Vi är i behov utav</option>
-                    <option value="Leg. läkare">Leg. läkare</option>
-                    <option value="Sjuksköterska">Sjuksköterska</option>
-                    <option value="Kirurgi">Kirurgi</option>
-                    <option value="Allmänmedicin">Allmänmedicin</option>
-                    <option value="Företagshälsovård">Företeagshälsovård</option>
-                    <option value="St-Läkare">ST-läkare</option>
+                    <?php
+                    for ($i = 0; $i < count($occupations); $i++) {
+                        $occupation = $occupations[$i];
+                    ?> <option value="<?php echo $occupation; ?>"><?php echo $occupation; ?></option><?php
+                                                                                                    } ?>
                 </select><br><br>
-                <!-- <input type="submit"> -->
-                <!-- </form> -->
-                <!-- Dropdown meny där användaren väljer erfarenhetskrav på personalen -->
-                <!-- <Form action="/"> -->
                 <label for="experience">Erfaranhet:</label> <br>
                 <select id="experience" name="experience">
-                    <option value="" disabled selected class="placeholder">Erfarenhet</option>
-                    <option value="1">0 - 1</option>
-                    <option value="2">2 - 4</option>
-                    <option value="5">5 - 8</option>
-                    <option value="8">8 - 9</option>
-                    <option value="10">10+</option>
-                    <option value="20">20+</option>
+                    <option value="" disabled selected class="placeholder">Minimum erfarenhet</option>
+                    <?php
+                    for ($i = 0; $i < count($minimumExperiance); $i++) {
+                        $experiance = $minimumExperiance[$i];
+                    ?> <option value="<?php echo $experiance; ?>"><?php echo $experiance; ?> års erfaranhet</option><?php
+                                                                                                                } ?>
+                </select><br><br>
+                <label for="contract">Anställningsavtal:</label> <br>
+                <select id="contract" name="contract">
+                    <option value="" disabled selected class="placeholder">Önskad kontraktslängd</option>
+                    <?php
+                    for ($i = 0; $i < count($contracts); $i++) {
+                        $contractLenght = $contracts[$i];
+                    ?> <option value="<?php echo $contractLenght; ?>"><?php echo $contractLenght; ?></option><?php
+                                                                                                            } ?>
                 </select><br><br>
                 <input type="submit" class="button" value="Skicka">
             </Form>
+
         </div>
     </div>
 </section>
-<section class="Info">
+<article class="Reference">
     <div class="Quote">
-        <div class="Review">
-            <p class="Denzel">
-                If you don't read the newspaper you're uninformed. If you do read
-                the newspaper you're missinformed.<br />
-                <span>- Denzel Washington</span>
-            </p>
-        </div>
-        <div class="Review">
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat
-                placeat dolorem similique facere. Dolorem, eaque. Sint officiis odit
-                eveniet, numquam facere blanditiis rerum impedit ea.<br />
-                <span>- Denzel Washington</span>
-            </p>
-        </div>
-        <div class="Review">
-            <p>When people are sick they deserve a little help. Sick, help. Sick, help.<br />
-                <span>- Denzel Washington</span>
-            </p>
-        </div>
+        <?php foreach ($quotes as $key => $value) {
+        ?>
+            <div class="Review">
+                <p> <?php echo $value; ?><br /><span>- <?php echo $key ?> </span></p>
+            </div> <?php
+                } ?>
     </div>
     <div class="Photo">
-        <picture class="Employee">
-            <img src="/images/project-img.jpeg" alt="Doctor-pointing" />
+        <picture class="PictureFrame">
+            <img src="/images/young-doctor copy .jpg" alt="Doctor-pointing" />
         </picture>
-        <picture class="Employee">
+        <picture class="PictureFrame">
             <img src="/images/usman-yousaf-pTrhfmj2jDA-unsplash.jpg" alt="Doctor-pointing" />
         </picture>
-        <picture class="Employee">
-            <img src="/images/young-doctor.jpeg" alt="Doctor-pointing" />
+        <picture class="PictureFrame">
+            <img src="/images/young-doctor copy .jpg" alt="Doctor-pointing" />
         </picture>
     </div>
-</section>
+</article>
 <?php
-
 require __DIR__ . '/footer.php';
 ?>
-<?php
 
-//Inlog form
+<!-- //Inlog form
 // if (isset($_POST['email'], $_POST['password'])){
 //   $email = $_POST['email']
 // }
-//
-?>
-
-<!-- <form method="POST" action="/">
-    <label for="name">Name:</label>
-    <input type="text" name="name" id="name">
-    <label for="biography">Biography</label>
-    <button type="submit">Submit</button>
-
-    < // require __DIR__ . '/header.php' ; // //Indexed array of citys // $hospital=[ // 'Göteborg' , // 'Stockholm' , // 'Varberg' , // 'Halmstad' , // 'Malmö' , // 'Kiruna' , // 'Umeå' // ]; // $hospitals=[ // ['Göteborg'=> 'Östra Sjukhuset'],
-        // ['Göteborg' => 'Sahlgrenska Universitetssjukhus'],
-        // ['Göteborg' => 'Capio Lundby Närsjukhus'],
-        // ['Stockholm' => 'Astrid Lindgrens Barnsjukhus', 'Södersjukhuset', 'Capio Sankt Görans Sjukhus'],
-        // ['Malmö' => 'Allmänna Sjukhuset', 'Skånes Universitetssjukhus'],
-        // ['Varberg' => 'Hallands Sjukhus Varberg'],
-        // ['Halmstad' => 'Hallands Sjukhus Halmstad'],
-        // ['Kiruna' => 'Kiruna Sjukhus'],
-        // ['Umeå' => 'Norrlands Universitetssjukhus']
-        // ];
-
-        // foreach ($hospitals as $town) {
-        // foreach ($town as $key => $value) {
-        // $city = $key;
-        // $hospital = $value;
-
-        // for ($town[$i] = 0; $town['Göteborg'] = true; $town[$i]++) {
-        // echo $hospital;
-        // }
-        // }
-        // }
-
-
-
-
-
-        // $employees = [
-        // ['name' => 'Simon', 'title' => 'Leg. läkare', 'experience' => '10', 'city' => 'Göteborg, Stockholm, Malmö, Hamlstad, Varberg'],
-        // ['name' => 'Sakarais', 'title' => 'Sjuksköterska', 'experience' => '10', 'city' => 'Göteborg, Hamlstad, Varberg'],
-        // ['name' => 'Helier', 'title' => 'Kirurgi', 'experience' => '5', 'city' => 'Göteborg, Kiruna, Umeå'],
-        // ['name' => 'Robert', 'title' => 'Allmänmedicin', 'experience' => '2'],
-        // ['name' => 'Jaana', 'title' => 'Företagshälsovård', 'experience' => '8', 'city' => 'Göteborg, Kiruna, Umeå'],
-        // ['name' => 'Jaana', 'title' => 'ST-läkare', 'experience' => '8', 'city' => 'Göteborg]']
-        // ];
-
-
-
-
-        // require __DIR__ . '/functions.php'; -->
+// -->
