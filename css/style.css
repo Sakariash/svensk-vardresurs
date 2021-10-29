@@ -294,8 +294,7 @@ footer {
   .HeroPic {
     position: relative;
     text-align: center;
-    /* color: white; */
-    color: tomato;
+    color: white;
   }
   .HeroPic img {
     width: 100%;
