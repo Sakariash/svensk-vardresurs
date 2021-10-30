@@ -1,0 +1,56 @@
+footer {
+  width: 100vw;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(60, 120, 168);
+  position: absolute;
+  font-family: 'futura_ltbook';
+}
+.date {
+  width: 100%;
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+}
+.icon {
+  width: 70px;
+  height: 40px;
+  flex-direction: row;
+}
+.icon img {
+  width: 30px;
+}
+@media screen and (min-width: 768px) {
+  .date {
+    width: 100%;
+    font-size: 17px;
+  }
+  .icon {
+    width: 90px;
+    height: 50px;
+    display: row;
+  }
+  .icon img {
+    width: 40px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  footer {
+    height: 200px;
+  }
+  .date {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .icon {
+    width: 90px;
+    height: 50px;
+  }
+  .icon img {
+    width: 40px;
+  }
+}

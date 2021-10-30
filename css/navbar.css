@@ -1,0 +1,63 @@
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 62px;
+  background-color: rgb(60, 120, 168);
+  padding-right: 60px;
+  padding-left: 60px;
+}
+.LeftNavbar img {
+  height: 40px;
+}
+.RightNavbar {
+  display: flex;
+}
+.About {
+  padding-right: 30px;
+  visibility: hidden;
+}
+.Work {
+  padding-right: 30px;
+  visibility: hidden;
+}
+.BurgerMenu {
+  display: flex;
+  flex-direction: column;
+}
+.Row {
+  width: 35px;
+  height: 3px;
+  background-color: black;
+  margin: 1.5px;
+}
+@media screen and (min-width: 768px) {
+  .Navbar {
+    height: 80px;
+  }
+  .LeftNavbar img {
+    height: 75px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .Navbar {
+    height: 128px;
+  }
+  .LeftNavbar img {
+    height: 80px;
+  }
+  .About {
+    font-size: 30px;
+    visibility: visible;
+    font-family: 'futura_ltbook';
+  }
+  .Work {
+    font-size: 30px;
+    visibility: visible;
+    font-family: 'futura_ltbook';
+  }
+  .BurgerMenu {
+    visibility: hidden;
+  }
+}

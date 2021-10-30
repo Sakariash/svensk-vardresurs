@@ -1,0 +1,112 @@
+.Reference {
+  width: 100%;
+  height: 900px;
+  margin-top: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.Quote {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'futura_ltbook';
+  font-size: small;
+}
+.Review {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  background-color: white;
+}
+.Review p {
+  align-self: flex-end;
+  padding-left: 20px;
+}
+span {
+  padding-left: 65px;
+}
+
+.Photo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.Photo img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 5%;
+  filter: grayscale(100%);
+}
+@media screen and (min-width: 768px) {
+  .Reference {
+    height: 550px;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+  }
+  .Quote {
+    width: 100%;
+    height: 200px;
+    flex-direction: row;
+    font-size: large;
+  }
+  .Review {
+    height: 100%;
+    display: inline;
+  }
+  .Review p {
+    padding: 0 20px 0 20px;
+    vertical-align: top;
+  }
+  span {
+    padding-left: 100px;
+    font-size: small;
+  }
+  .Photo {
+    width: 100%;
+    flex-direction: row;
+  }
+  .Photo img {
+    width: 250px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .Reference {
+    height: 550px;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+  }
+  .Quote {
+    width: 100%;
+    height: 200px;
+    padding: 0 100px 0 100px;
+    flex-direction: row;
+    font-size: large;
+  }
+  .Review {
+    width: 250px;
+    height: 100%;
+    display: inline;
+  }
+  .Review p {
+    padding: 0 20px 0 20px;
+    vertical-align: top;
+  }
+  span {
+    padding-left: 100px;
+    font-size: small;
+  }
+  .Photo {
+    width: 100%;
+    padding: 0 100px 0 100px;
+    flex-direction: row;
+  }
+  .Photo img {
+    width: 250px;
+  }
+}

@@ -1,0 +1,88 @@
+article {
+  display: flex;
+  flex-direction: column;
+}
+.firstValueWord {
+  width: 100vw;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(60, 120, 168);
+  padding: 30px 70px 30px 85px;
+  font-family: sans-serif;
+  color: white;
+}
+.secondValueWord {
+  width: 100vw;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(136, 196, 136);
+  padding: 30px 70px 30px 85px;
+  font-family: sans-serif;
+  color: white;
+}
+.thirdValueWord {
+  width: 100vw;
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(60, 120, 168);
+  padding: 30px 70px 30px 85px;
+  font-family: sans-serif;
+  color: white;
+}
+.article p {
+  font-family: 'futura_ltbook';
+}
+@media screen and (min-width: 768px) {
+  .article {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    width: 100%;
+    height: 300px;
+  }
+  .firstValueWord {
+    height: 300px;
+    padding: 30px 20px 30px 20px;
+  }
+  .secondValueWord {
+    height: 300px;
+    padding: 30px 20px 30px 20px;
+  }
+  .thirdValueWord {
+    height: 300px;
+    padding: 30px 20px 30px 20px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .article {
+    flex-direction: row;
+    margin: 0px;
+    width: 100%;
+    height: 300px;
+  }
+  svg {
+    display: flex;
+    margin-top: 0px;
+  }
+  .firstValueWord {
+    height: 300px;
+    padding: 50px 60px 30px 60px;
+  }
+  .secondValueWord {
+    height: 300px;
+    padding: 40px 60px 30px 60px;
+  }
+  .thirdValueWord {
+    height: 300px;
+    padding: 50px 60px 30px 60px;
+  }
+  p {
+    font-family: 'futura_ltbook';
+  }
+}
