@@ -1,0 +1,145 @@
+.contact {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  font-family: 'futura_ltbook';
+}
+.contactHeader {
+  display: flex;
+  flex-direction: row;
+  padding: 50px 20px 50px 20px;
+}
+.contactLogo {
+  height: 45px;
+  width: 50px;
+  display: flex;
+  /* background-color: lightpink; */
+}
+.contact h1 {
+  padding-top: 6px;
+}
+.contact h2 {
+  padding: 50px 20px 0 20px;
+  text-decoration: underline;
+}
+.information {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 200px;
+  padding: 50px 20px 50px 20px;
+}
+.name {
+  width: 20%;
+}
+.fillInName {
+  background-color: rgb(235, 235, 235);
+  width: 70%;
+  border: 1px solid lightgrey;
+  padding-left: 10px;
+}
+.email {
+  width: 20%;
+}
+.fillInEmail {
+  background-color: rgb(235, 235, 235);
+  width: 70%;
+  border: 1px solid lightgrey;
+  padding-left: 10px;
+}
+.occupation {
+  width: 20%;
+}
+.fillInOccupation {
+  background-color: rgb(235, 235, 235);
+  width: 70%;
+  border: 1px solid lightgrey;
+  padding-left: 10px;
+}
+.contactMessage {
+  margin: 0 50px 0 50px;
+}
+.requiredMessage {
+  background-color: rgb(235, 235, 235);
+  border: 1px solid lightgrey;
+  margin: 0 50px 50px 50px;
+  padding: 10px;
+  height: 200px;
+  font-style: italic;
+}
+.sendMessage {
+  width: 150px;
+  font-family: 'futura_ltbook';
+  font-size: 15px;
+  border-radius: 50px;
+  height: 40px;
+  background-color: rgb(136, 196, 136);
+  margin: 0 0 50px 50px;
+}
+@media screen and (min-width: 768px) {
+  .contact {
+    height: 800px;
+  }
+  .contactHeader {
+    padding: 100px 0 100px 80px;
+  }
+  .contactLogo {
+    height: 45px;
+    width: 50px;
+    display: flex;
+    /* background-color: lightpink; */
+  }
+  .contact h1 {
+    padding-top: 6px;
+  }
+  .contact h2 {
+    padding: 50px 0 0 80px;
+    text-decoration: underline;
+  }
+  .information {
+    padding: 50px 80px 50px 80px;
+  }
+  .contactMessage {
+    margin: 0 70px 0 70px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .contact {
+    width: 100%;
+    height: 100vh;
+  }
+  .contactHeader {
+    padding: 100px 0 100px 200px;
+  }
+
+  .contact h2 {
+    padding: 50px 200px 0 200px;
+  }
+  .information {
+    height: 200px;
+    padding: 50px 200px 50px 200px;
+  }
+  .contactMessage {
+    margin: 0 200px 0 200px;
+  }
+  .requiredMessage {
+    background-color: rgb(235, 235, 235);
+    border: 1px solid lightgrey;
+    margin: 0 200px 50px 200px;
+    padding: 10px;
+    height: 200px;
+    font-style: italic;
+  }
+  .sendMessage {
+    width: 150px;
+    font-family: 'futura_ltbook';
+    font-size: 15px;
+    border-radius: 50px;
+    height: 40px;
+    background-color: rgb(136, 196, 136);
+    margin: 0 0 200px 200px;
+  }
+}
