@@ -30,7 +30,7 @@ $occupations = [
     'Överläkare',
 ];
 
-//Array containing all the cities
+//Array containing all the cities and hospitals linked to those cities
 $hospitals = [
     ['Göteborg' => 'Östra Sjukhuset'],
     ['Göteborg' => 'Sahlgrenska Universitetssjukhus'],
@@ -46,7 +46,7 @@ $hospitals = [
     ['Umeå' => 'Norrlands Universitetssjukhus'],
 ];
 
-/* Fill the array with array_push function*/
+//Array to print out the minimum experience in the form in index.php
 $minimumExperience = [];
 
 $i = 0;
@@ -55,32 +55,13 @@ for ($i = 0; $i <= 10; $i++) {
     array_push($minimumExperience, $experience);
 };
 
-//The avalible contract lenghts
+//The available contract lenghts
 $contracts = [
     'Långtidskontrakt',
     'Korttidskontrakt',
 ];
 
-//Make the employee array multidimentional??
-// $multi = [
-
-//     [
-//         'Kirurg' =>
-//         [
-//             'name' => 'Sam Teame',
-//             'occupation' => 'Allmänmedicin',
-//             'experience' => '8',
-//             'contract' => 'Långtidskontrakt',
-//             'city' => 'Stockholm',
-//         ]
-//     ]['Leg. Läkare'],
-//     ['Narkosläkare'],
-//     ['Sjuksköterska'],
-//     ['ST-läkare'],
-//     ['Överläkare'],
-// ];
-
-//All the available hospital workers
+//All the available workers. Should have used an array for 'city' to allow the workers to be available for multiple cities
 $employees = [
     [
         'name' => 'Sam Teame',
@@ -455,8 +436,3 @@ $employees = [
         'city' => 'Stockholm',
     ],
 ];
-
-
-
-//array_keys
-//array_filter
