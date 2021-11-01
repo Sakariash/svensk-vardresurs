@@ -2,11 +2,13 @@
 
 # Project Title
 
-Text about the project and why it exists. This would also be a great place to link the project on One.com.
+A micro variant of a healthcare staffing system. Everybody deserve a little help and no one likes to wait
+https://simonhelier.com/svensk_vardresurs/
 
 # Installation
 
-Add the installation instructions.
+##1. Clone repo from GitHub.
+##2. Run PHP localhost from terminal (PHP -S localhost:8000) from root folder.
 
 # Code Review
 
