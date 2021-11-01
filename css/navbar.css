@@ -57,6 +57,13 @@
     visibility: visible;
     font-family: 'futura_ltbook';
   }
+  a:hover {
+    color: rgb(136, 196, 136);
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
   .BurgerMenu {
     visibility: hidden;
   }
