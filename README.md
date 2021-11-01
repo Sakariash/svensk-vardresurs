@@ -7,8 +7,8 @@ https://simonhelier.com/svensk_vardresurs/
 
 # Installation
 
-##1. Clone repo from GitHub.
-##2. Run PHP localhost from terminal (PHP -S localhost:8000) from root folder.
+1. Clone repo from GitHub.
+2. Run PHP localhost from terminal (PHP -S localhost:8000) from root folder.
 
 # Code Review
 
