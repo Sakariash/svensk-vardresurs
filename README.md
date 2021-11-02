@@ -12,13 +12,13 @@ https://simonhelier.com/svensk_vardresurs/
 
 # Code Review
 
-Code review written by [Jane Doh](https://github.com/username).
+Code review written by [Sofia Rönnkvist](https://github.com/sofiaronnkvist).
 
-1. `example.js:10-15` - Remember to think about X and this could be refactored using the amazing Y function.
-2. `example.js:10-15` - Remember to think about X and this could be refactored using the amazing Y function.
-3. `example.js:10-15` - Remember to think about X and this could be refactored using the amazing Y function.
-4. `example.js:10-15` - Remember to think about X and this could be refactored using the amazing Y function.
-5. `example.js:10-15` - Remember to think about X and this could be refactored using the amazing Y function.
+1. `General:root` - Your index.php file should be avaliable in the root of the project.
+2. `main.css:111-114` - On smaller screens, this paragraph needs more space since it overflows now.
+3. `navbar.css` - When the screen is in tablet/mobile size, the hamburger menu should be able to drop down with the options.
+4. `General:images` - The alternative texts for the pictures needs some work to be more descriptive.
+5. `index.php:25` - Consider adding * or some text to singnal that all fields must be chosen before clicking Skicka for it to work.
 
 # Testers
 
