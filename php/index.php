@@ -5,8 +5,7 @@ require __DIR__ . '/functions.php';
 
 //myFunction runs if data is placed in the form starting on line 35
 if (isset($_GET['city'], $_GET['occupation'], $_GET['experience'], $_GET['contract'])) {
-    $experience = intval($_GET['experience']);
-    $available = myFunction($_GET['city'], $_GET['occupation'], $experience, $_GET['contract']);
+    $available = myFunction($_GET['city'], $_GET['occupation'], intval($_GET['experience']), $_GET['contract']);
 }
 
 require __DIR__ . '/navbar.php';
@@ -51,10 +50,11 @@ require __DIR__ . '/navbar.php';
                 <select id="experience" name="experience">
                     <option value="" disabled selected class="placeholder">Minimum erfarenhet</option>
                     <?php
+                    $i = 0;
                     for ($i = 0; $i < count($minimumExperience); $i++) {
                         $experience = $minimumExperience[$i];
-                    ?> <option value="<?php echo $experience; ?>"><?php echo $experience; ?> års erfaranhet</option><?php
-                                                                                                                } ?>
+                    ?> <option value="<?php echo $i; ?>"><?php echo $experience; ?> års erfaranhet</option><?php
+                                                                                                        } ?>
                 </select><br><br>
 
                 <!-- Dropdown menu where user select lenght of the contract. The data is then sent to myFunction() -->
@@ -74,12 +74,13 @@ require __DIR__ . '/navbar.php';
                 <!-- The choosen data (employee) from the form is passed to contact.php -->
             </Form>
             <?php if (isset($_GET)) { ?>
+
                 <form action="/php/contact.php" method="POST">
                     <label for="available">Tillgänglig personal:</label> <br>
                     <select id="available" name="available">
                         <option value="" disabled selected class="placeholder">Tillgänglig personal</option>
                         <?php foreach ($available as $staff) {
-                        ?><option value='<?php echo json_encode($staff); ?>'><?php echo "$staff[name], $occupation, $staff[experience]års erfarenhet."; ?></option> <?php } ?>
+                        ?><option value='<?php echo json_encode($staff); ?>'><?php echo "$staff[name], $staff[occupation], $staff[experience]års erfarenhet."; ?></option> <?php } ?>
                     </select><br><br><?php
                                     }
                                         ?><input type="submit" class="button" value="Kontakta resurs">
