@@ -18,11 +18,11 @@ Code review written by [Sofia Rönnkvist](https://github.com/sofiaronnkvist).
 2. `main.css:111-114` - On smaller screens, this paragraph needs more space since it overflows now.
 3. `navbar.css` - When the screen is in tablet/mobile size, the hamburger menu should be able to drop down with the options.
 4. `General:images` - The alternative texts for the pictures needs some work to be more descriptive.
-5. `index.php:25` - Consider adding * or some text to singnal that all fields must be chosen before clicking Skicka for it to work.
+5. `index.php:25` - Consider adding \* or some text to singnal that all fields must be chosen before clicking Skicka for it to work.
 
 # Testers
 
 Tested by the following people:
 
-1. Jane Doe
-2. John Doe
+1. Christopher Michael (https://github.com/chrs-m)
+2. Patrik Staff (https://github.com/patrikstaaf)
