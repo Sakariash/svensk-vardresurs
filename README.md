@@ -1,6 +1,6 @@
 <img src="https://media.giphy.com/media/1FMaabePDEfgk/giphy.gif" />
 
-# Project Title
+# Svensk Vårdresurs
 
 A micro variant of a healthcare staffing system. Everybody deserve a little help and no one likes to wait
 https://simonhelier.com/svensk_vardresurs/
@@ -24,5 +24,5 @@ Code review written by [Sofia Rönnkvist](https://github.com/sofiaronnkvist).
 
 Tested by the following people:
 
-1. Christopher Michael (https://github.com/chrs-m)
-2. Patrik Staff (https://github.com/patrikstaaf)
+1. [Christopher Michael](https://github.com/chrs-m)
+2. [Patrik Staff](https://github.com/patrikstaaf)
