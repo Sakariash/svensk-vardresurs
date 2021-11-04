@@ -27,11 +27,11 @@ require __DIR__ . '/php/navbar.php';
                 <label for="city">Arbetsplats:</label> <br>
                 <select id="city" name="city">
                     <option value="" disabled selected class="placeholder">Sjukhus i behov av resurs</option>
-                    <?php foreach ($hospitals as $hospital) {
-                        foreach ($hospital as $key => $value) {
+                    <?php foreach ($hospitals as $hospital) :
+                        foreach ($hospital as $key => $value) :
                     ?><option value="<?php echo $key; ?>"><?php echo $value; ?>, <?php echo $key; ?></option><?php
-                                                                                                            }
-                                                                                                        } ?>
+                                                                                                            endforeach;
+                                                                                                        endforeach; ?>
                 </select><br><br>
 
                 <!-- Dropdown menu where user select which occupation is wanted. The data is then sent to availableEmployees() -->
@@ -39,10 +39,10 @@ require __DIR__ . '/php/navbar.php';
                 <select id="occupation" name="occupation">
                     <option value="" disabled selected class="placeholder">Vi är i behov utav</option>
                     <?php
-                    for ($i = 0; $i < count($occupations); $i++) {
+                    for ($i = 0; $i < count($occupations); $i++) :
                         $occupation = $occupations[$i];
                     ?> <option value="<?php echo $occupation; ?>"><?php echo $occupation; ?></option><?php
-                                                                                                    } ?>
+                                                                                                    endfor; ?>
                 </select><br><br>
 
                 <!-- Dropdown menu where user select minimum experience. The data is then sent to availableEmployees() -->
@@ -51,10 +51,10 @@ require __DIR__ . '/php/navbar.php';
                     <option value="" disabled selected class="placeholder">Minimum erfarenhet</option>
                     <?php
                     $i = 0;
-                    for ($i = 0; $i < count($minimumExperience); $i++) {
+                    for ($i = 0; $i < count($minimumExperience); $i++) :
                         $experience = $minimumExperience[$i];
                     ?> <option value="<?php echo $i; ?>"><?php echo $experience; ?> års erfaranhet</option><?php
-                                                                                                        } ?>
+                                                                                                        endfor; ?>
                 </select><br><br>
 
                 <!-- Dropdown menu where user select lenght of the contract. The data is then sent to availableEmployees() -->
@@ -62,10 +62,10 @@ require __DIR__ . '/php/navbar.php';
                 <select id="contract" name="contract">
                     <option value="" disabled selected class="placeholder">Önskad kontraktslängd</option>
                     <?php
-                    for ($i = 0; $i < count($contracts); $i++) {
+                    for ($i = 0; $i < count($contracts); $i++) :
                         $contractLenght = $contracts[$i];
                     ?> <option value="<?php echo $contractLenght; ?>"><?php echo $contractLenght; ?></option><?php
-                                                                                                            } ?>
+                                                                                                            endfor; ?>
                 </select><br><br>
                 <input type="submit" class="button" value="Skicka">
                 <br><br>
@@ -73,16 +73,16 @@ require __DIR__ . '/php/navbar.php';
                 <!-- When the previous data has filtred through the $employee array all the matching data is put in the below form -->
                 <!-- The choosen data (employee) from the form is passed to contact.php -->
             </Form>
-            <?php if (isset($_GET)) { ?>
+            <?php if (isset($_GET)) : ?>
 
                 <form action="/svensk_vardresurs/php/contact.php" method="POST">
                     <label for="available">Tillgänglig personal:</label> <br>
                     <select id="available" name="available">
                         <option value="" disabled selected class="placeholder">Tillgänglig personal</option>
-                        <?php foreach ($available as $staff) {
-                        ?><option value='<?php echo json_encode($staff); ?>'><?php echo "$staff[name], $staff[occupation], $staff[experience]års erfarenhet."; ?></option> <?php } ?>
+                        <?php foreach ($available as $staff) :
+                        ?><option value='<?php echo json_encode($staff); ?>'><?php echo "$staff[name], $staff[occupation], $staff[experience]års erfarenhet."; ?></option> <?php endforeach; ?>
                     </select><br><br><?php
-                                    }
+                                    endif;
                                         ?><input type="submit" class="button" value="Kontakta resurs">
                 </form>
         </div>
@@ -92,12 +92,12 @@ require __DIR__ . '/php/navbar.php';
 <!-- Loop through the $quotes array to print each quote from the array -->
 <article class="Reference">
     <div class="Quote">
-        <?php foreach ($quotes as $quote) {
+        <?php foreach ($quotes as $quote) :
         ?>
             <div class="Review">
                 <p> <?php echo "$quote[review]"; ?><br /><span>- <?php echo "$quote[name]"; ?> </span></p>
             </div> <?php
-                } ?>
+                endforeach; ?>
     </div>
     <div class="Photo">
         <picture class="PictureFrame">
