@@ -8,14 +8,14 @@ require __DIR__ . '/data.php';
 
 //json_encode makes the variable able to be any type
 //json_decode switch the variable back to it orignial type
-if (isset($_POST['available'])) {
+if (isset($_POST['available'])) :
     $employee = json_decode($_POST['available'], true);
 
     $name = $employee['name'];
     $occupation = $employee['occupation'];
     $experience = $employee['experience'];
     $contract = $employee['contract'];
-}
+endif;
 ?>
 <div class="contact">
     <div class=contactHeader>
