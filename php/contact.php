@@ -19,7 +19,7 @@ if (isset($_POST['available'])) {
 ?>
 <div class="contact">
     <div class=contactHeader>
-        <div class="contactLogo"><img src="/images/stethoscope.png" alt="Stethoscope-logo"></div>
+        <div class="contactLogo"><img src="/svensk_vardresurs/images/stethoscope.png" alt="Stethoscope-logo"></div>
         <h1>Svensk Vårdresurs</h1>
     </div>
     <div>
