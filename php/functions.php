@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 
 //The data from the form in index.php is pushed to array $available
-function myFunction(string $city, string $occupation, int $year, string $contract): array
+function availableEmployees(string $city, string $occupation, int $year, string $contract): array
 {
     require __DIR__ . '/data.php';
     $available = [];
@@ -16,4 +16,14 @@ function myFunction(string $city, string $occupation, int $year, string $contrac
     }
 
     return $available;
+}
+function getSocialLink($icons): string
+{
+    if ($icons === 'instagram') {
+        return "https://instagram.com";
+    } else if ($icons === 'facebook') {
+        return "https://facebook.com";
+    } else {
+        return '';
+    }
 }
