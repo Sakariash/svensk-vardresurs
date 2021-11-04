@@ -9,7 +9,7 @@ $companyMail = 'svenskvardresurs@info.se';
 ?>
 <!-- Navbar -->
 <nav class="Navbar">
-    <div class="LeftNavbar"><a href="/php/index.php"><img src="/images/stethoscope.png" alt="Stethoscope-logo"></a></div>
+    <div class="LeftNavbar"><a href="/index.php"><img src="/svensk_vardresurs/images/stethoscope.png" alt="Stethoscope-logo"></a></div>
     <div class="RightNavbar">
         <div class="About"><a href="">Om oss</a></div>
         <div class="Work"><a href="">Bemanning</a></div>
@@ -22,7 +22,7 @@ $companyMail = 'svenskvardresurs@info.se';
 </nav>
 <section class="Hero">
     <div class="HeroPic">
-        <img src="/images/young-doctor.jpeg" alt="young-doctor" />
+        <img src="/svensk_vardresurs/images/young-doctor.jpeg" alt="young-doctor" />
         <div class="Company">
             <h1>Svensk Vårdresurs</h1>
         </div>
